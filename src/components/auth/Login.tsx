@@ -44,8 +44,7 @@ const Login = () => {
               type="email"
               autoComplete="off"
               placeholder="joedoe@email.com"
-              required
-              className="border w-full pl-10 invalid:border-pink-600  p-2 focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-4"
+              className="border w-full pl-10  p-2 focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-4"
             />
           </div>
 
@@ -54,11 +53,10 @@ const Login = () => {
             <BiSolidLockAlt className="absolute left-3 top-5/16 -translate-y-1/2 text-gray-400"/>
             <input
             {...register('password')}
-            required
             autoComplete="off"
             type="password"
             placeholder="********"
-            className="border p-2 w-full pl-10 invalid:border-pink-600 focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-4"
+            className="border p-2 w-full pl-10  focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-4"
           />
           </div>
 
