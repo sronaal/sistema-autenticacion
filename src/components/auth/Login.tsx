@@ -13,7 +13,7 @@ const Login = () => {
 
 
 
-  const { register, handleSubmit, reset } = useForm<z.infer<typeof schemaLoginForm>>({
+  const { register, handleSubmit, reset, formState: { errors }} = useForm<z.infer<typeof schemaLoginForm>>({
     resolver: zodResolver(schemaLoginForm),
     defaultValues: {
       email: '',
@@ -22,7 +22,9 @@ const Login = () => {
   })
 
 
-
+  const onSubmit =(credenciales) => {
+    console.log(credenciales)
+  }
 
   return (
     <>
@@ -31,15 +33,18 @@ const Login = () => {
         <h1 className="sm:text-3xl text-2xl font-bold mb-4">Iniciar <span className="text-sky-500">Sesión.</span> </h1>
         <p className="font-light text-center text-gray-300 mb-8">Ingresa tus credenciales para acceder a la <span className="underline underline-offset-4 decoration-2 decoration-sky-500">plataforma</span></p>
 
-        <form className="flex flex-col w-full px-6 py-2">
+        <form className="flex flex-col w-full px-6 py-2" onSubmit={ handleSubmit(onSubmit)}>
           <label className="mb-2">Correo electronico:</label>
           <div className="relative mb-4">
             <BiSolidUser className="absolute left-3  top-5/13  -translate-y-1/2 text-gray-400" />
 
             <input
               {...register('email')}
+              type="email"
+              autoComplete="off"
               placeholder="joedoe@email.com"
-              className="border w-full pl-10  p-2 focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-4"
+              required
+              className="border w-full pl-10 invalid:border-pink-600  p-2 focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-4"
             />
           </div>
 
@@ -48,11 +53,19 @@ const Login = () => {
             <BiSolidLockAlt className="absolute left-3 top-5/16 -translate-y-1/2 text-gray-400"/>
             <input
             {...register('password')}
+            required
+            autoComplete="off"
+            type="password"
             placeholder="********"
-            className="border p-2 w-full pl-10 focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-6"
+            className="border p-2 w-full pl-10 invalid:border-pink-600 focus:border-sky-500 focus:outline focus:outline-sky-500 rounded-md mb-4"
           />
           </div>
-          <button type="submit" className="w-full bg-sky-500 p-3 rounded-md mb-4 hover:cursor-pointer hover:bg-sky-600 hover:text-xl ">Iniciar Sesión</button>
+
+          <p className="text-md text-pink-600">{errors.password?.message}</p>
+          <p className="text-md text-pink-600 mb-4">{errors.email?.message}</p>
+
+          <button type="submit" className="w-full bg-sky-500 p-3 rounded-md mb-4 hover:cursor-pointer hover:bg-sky-600 hover:text-xl hover:rounded-xl transition-colors duration-300 ">Iniciar Sesión</button>
+        
         </form>
         <div className="w-full px-6 flex justify-end mb-4">
           <a className="text-sky-500 hover:underline" href="">¿Olvidaste tu contraseña?</a>
