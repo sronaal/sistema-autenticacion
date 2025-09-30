@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { schemaLoginForm } from "@/lib/zod"
 import { useForm } from "react-hook-form"
 import type z from "zod"
@@ -13,7 +14,7 @@ const Login = () => {
 
 
 
-  const { register, handleSubmit, reset, formState: { errors }} = useForm<z.infer<typeof schemaLoginForm>>({
+  const { register, handleSubmit,  formState: { errors }} = useForm<z.infer<typeof schemaLoginForm>>({
     resolver: zodResolver(schemaLoginForm),
     defaultValues: {
       email: '',
@@ -22,7 +23,7 @@ const Login = () => {
   })
 
 
-  const onSubmit =(credenciales) => {
+  const onSubmit =(credenciales:any) => {
     console.log(credenciales)
   }
 
