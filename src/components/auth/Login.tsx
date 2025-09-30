@@ -60,8 +60,9 @@ const Login = () => {
           />
           </div>
 
-          <p className="text-md text-pink-600">{errors.password?.message}</p>
+         
           <p className="text-md text-pink-600 mb-4">{errors.email?.message}</p>
+          <p className="text-md text-pink-600">{errors.password?.message}</p>
 
           <button type="submit" className="w-full bg-sky-500 p-3 rounded-md mb-4 hover:cursor-pointer hover:bg-sky-600 hover:text-xl hover:rounded-xl transition-colors duration-300 ">Iniciar Sesión</button>
         
