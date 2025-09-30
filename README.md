@@ -14,7 +14,7 @@ Este repositorio es ideal como **base para proyectos SaaS**, pruebas técnicas o
 
 ---
 
-## 🖥️ Vista Previ
+## 🖥️ Vista Previa
 
 [Enlace](https://system-auth.netlify.app/)
 
