@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# 🔐 Sistema de Autenticación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a **Sistema de Autenticación**, un proyecto construido con **React + Vite + TypeScript**, pensado para manejar login, registro y recuperación de contraseñas de manera segura y escalable.  
+Este repositorio es ideal como **base para proyectos SaaS**, pruebas técnicas o para mostrar buenas prácticas de frontend moderno.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏷️ Badges
 
-## React Compiler
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white&style=flat)  
+![Vite](https://img.shields.io/badge/Vite-4-646CFF?logo=vite&logoColor=white&style=flat)  
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white&style=flat)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4?logo=tailwindcss&logoColor=white&style=flat)  
+![ESLint](https://img.shields.io/badge/ESLint-8-4B32C3?logo=eslint&logoColor=white&style=flat)  
+![Prettier](https://img.shields.io/badge/Prettier-3-F7B93E?logo=prettier&logoColor=black&style=flat)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Características principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📲 **Login y registro de usuarios** con validaciones  
+- 🔑 **Manejo de tokens (JWT / refresh tokens)**  
+- 🛡️ **Rutas protegidas** según estado de sesión  
+- 📦 **Arquitectura modular** (componentes, hooks, servicios)  
+- 🎨 **Interfaz responsiva y moderna** con TailwindCSS  
+- 🧹 Código limpio con **TypeScript + ESLint + Prettier**  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
