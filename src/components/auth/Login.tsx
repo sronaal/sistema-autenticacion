@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 import { BiSolidUser } from "react-icons/bi";
 import { BiSolidLockAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 
 
@@ -71,7 +72,7 @@ const Login = () => {
           <a className="text-sky-500 hover:underline" href="">¿Olvidaste tu contraseña?</a>
         </div>
         <div className="w-full flex justify-center">
-          <span className="text-sm text-gray-300">¿No tienes cuenta? <a href="" className="text-sky-500 font-bold hover:underline">Crear cuenta</a> </span>
+          <span className="text-sm text-gray-300">¿No tienes cuenta? <Link to='/register'  className="text-sky-500 font-bold hover:underline">Crear cuenta</Link> </span>
         </div>
       </div>
 

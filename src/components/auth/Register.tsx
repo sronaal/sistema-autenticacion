@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -71,8 +72,13 @@ const Register = () => {
           </button>
         </div>
 
-        <button className="bg-sky-500 p-2 rounded-md">Registrarme</button>
+        <button className="bg-sky-500 p-2 rounded-md mb-2">Registrarme</button>
       </form>
+      <div className="w-full flex justify-center">
+        <span className="text-sm text-gray-300">¿Ya tienes una cuenta?  
+          <Link to='/login' className="text-sky-500 font-bold hover:underline hover:text-md">   Ingresar</Link>
+        </span>
+      </div>
 
 
     </div>
