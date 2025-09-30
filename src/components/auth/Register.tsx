@@ -72,7 +72,7 @@ const Register = () => {
           </button>
         </div>
 
-        <button className="bg-sky-500 p-2 rounded-md mb-2">Registrarme</button>
+        <button className="bg-sky-500 p-2 rounded-md mb-2 cursor-pointer">Registrarme</button>
       </form>
       <div className="w-full flex justify-center">
         <span className="text-sm text-gray-300">¿Ya tienes una cuenta?  

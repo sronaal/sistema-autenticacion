@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <>
 
-      <div className="bg-[#0A0A0A]  sm:w-[50%] w-90 h-auto border border-border/50  py-6 text-white rounded-2xl flex flex-col items-center ">
+      <div className="bg-[#0A0A0A]  sm:w-[40%] w-90 h-auto border border-border/50  py-6 text-white rounded-2xl flex flex-col items-center ">
         <h1 className="sm:text-3xl text-2xl font-bold mb-4">Iniciar <span className="text-sky-500">Sesión.</span> </h1>
         <p className="font-light text-center text-gray-300 mb-8">Ingresa tus credenciales para acceder a la <span className="underline underline-offset-4 decoration-2 decoration-sky-500">plataforma</span></p>
 
@@ -69,7 +69,7 @@ const Login = () => {
         
         </form>
         <div className="w-full px-6 flex justify-end mb-4">
-          <a className="text-sky-500 hover:underline" href="">¿Olvidaste tu contraseña?</a>
+          <Link to='/forget' className="text-sky-500 hover:underline" >¿Olvidaste tu contraseña?</Link>
         </div>
         <div className="w-full flex justify-center">
           <span className="text-sm text-gray-300">¿No tienes cuenta? <Link to='/register'  className="text-sky-500 font-bold hover:underline">Crear cuenta</Link> </span>
