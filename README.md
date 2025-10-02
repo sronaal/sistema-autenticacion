@@ -1,3 +1,19 @@
+## 👤 Autor
+
+<p align="center">
+  <a href="https://github.com/sronaal">
+    <img src="https://avatars.githubusercontent.com/u/88067203?v=4" width="120px" alt="Foto de perfil de Ronal Sánchez"/>
+  </a>
+</p>
+
+<p align="center">
+  <b>Ronal Sánchez</b>  
+  <br />
+  🚀 Fullstack Developer | 📊 Entusiasta de SaaS & PBX
+</p>
+
+---
+
 # 🔐 Sistema de Autenticación
 
 Bienvenido a **Sistema de Autenticación**, un proyecto construido con **React + Vite + TypeScript**, pensado para manejar login, registro y recuperación de contraseñas de manera segura y escalable.  
@@ -24,21 +40,6 @@ Este repositorio es ideal como **base para proyectos SaaS**, pruebas técnicas o
 
 ---
 
-## 👤 Autor
-
-<p align="center">
-  <a href="https://github.com/sronaal">
-    <img src="https://avatars.githubusercontent.com/u/88067203?v=4" width="120px" alt="Foto de perfil de Ronal Sánchez"/>
-  </a>
-</p>
-
-<p align="center">
-  <b>Ronal Sánchez</b>  
-  <br />
-  🚀 Fullstack Developer | 📊 Entusiasta de SaaS & PBX
-</p>
-
----
 
 ### 🌍 Encuéntrame en
 
