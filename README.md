@@ -26,16 +26,16 @@ Este repositorio es ideal como **base para proyectos SaaS**, pruebas técnicas o
 
 ## 👤 Autor
 
-<table align="center">
-  
+<table>
   <tr>
     <td align="center">
       <a href="https://github.com/sronaal">
         <img src="https://avatars.githubusercontent.com/u/88067203?v=4" width="120px;" alt="Foto de perfil de Ronal Sánchez"/>
-        <br/>
+        <br />
         <sub><b>Ronal Sánchez</b></sub>
       </a>
-      <br/> 🚀 Fullstack Developer |
+      <br />
+      🚀 Fullstack Developer | 📊 Entusiasta de SaaS & PBX
     </td>
   </tr>
 </table>
