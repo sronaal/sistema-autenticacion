@@ -29,7 +29,6 @@ Este repositorio es ideal como **base para proyectos SaaS**, pruebas técnicas o
 <table align="center">
   
   <tr>
-
     <td align="center">
       <a href="https://github.com/sronaal">
         <img src="https://avatars.githubusercontent.com/u/88067203?v=4" width="120px;" alt="Foto de perfil de Ronal Sánchez"/>
